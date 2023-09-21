@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Discount eligibility program</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form method="post" action="submit">
+        <fieldset>
+            <h1>User Discount Eligibility</h1>
+            <label for="Age">How old are you?</label>
+                <input type="number"> <br> <br>
+            <label for="status">Are you a member?</label>
+            <label class="radioButton">
+                <label for="option-yes">
+                    <input type="radio" id="option-yes" name="option" value="yes" />
+                    <span>Yes</span>
+                  </label>
+                  
+                  <label for="option-no">
+                    <input type="radio" id="option-no" name="option" value="no" />
+                    <span>No</span>
+                  </label>
+            </label> <br><br>
+
+            <button>Check Eligibility</button>
+                
+
+        </fieldset>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>

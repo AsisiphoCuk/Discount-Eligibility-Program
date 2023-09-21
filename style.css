@@ -1,0 +1,40 @@
+
+form {
+    text-align: center;
+    margin: 10% 30%;
+}
+
+fieldset {
+    padding: 40px 0;
+    border-radius: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+  }
+  
+  .radioButton {
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  input[id="option-yes"]:checked + span {
+    background-color: green;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 40%;
+}
+
+input[id="option-no" ]:checked + span {
+    background-color:red;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 40%;
+}
+button {
+    padding: 5px 10px;
+    border-radius: 20px;
+}
