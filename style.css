@@ -1,12 +1,12 @@
 
+
 form {
+    padding: 40px 0;
+    border:orangered 1px solid;
+    border-radius: 20px;
     text-align: center;
     margin: 10% 30%;
-}
-
-fieldset {
-    padding: 40px 0;
-    border-radius: 20px;
+    background-color: #F6DBD7;
 }
 
 input[type="radio"] {
@@ -34,7 +34,16 @@ input[id="option-no" ]:checked + span {
     padding: 5px 10px;
     border-radius: 40%;
 }
-button {
-    padding: 5px 10px;
-    border-radius: 20px;
+
+input[type="submit"]{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: orangered 1px solid;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    color:orangered ;
+}
+html {
+    background-color: #F2DAB6;
 }

@@ -1,15 +1,16 @@
-function checkEligibility(){
-    let age = 18;
-    let member = "yes";
+function checkEligibility(event){
+    event.preventDefault();
+    let age = document.getElementById("age").value;
+    let member = document.querySelector('input[name="member"]:checked').value;
     let heading = document.querySelector('h1');
 
     if(age >= 65) {
-        console.log('Eligible for Senior Discount!😊');
-    } else if (age >= 18 && member === "yes"){
-        heading.innerHTML = 'Eligible for Member Discount!😊';
-    } else {heading.innerHTML = 'You are not eligible for a discount 🙁.';}
+        heading.innerHTML = 'You Are Eligible For Senior Discount!😊'; 
+    } else if (age >= 18 && member === 'yes'){
+        heading.innerHTML = 'You Are Eligible For Member Discount!😊';
+    } else {heading.innerHTML = 'Sorry! You are not eligible for a discount 🙁.';}
         
 } 
 
-let eligibility = document.querySelector('button');
-eligibility.addEventListener("click", checkEligibility );
+let eligibility = document.getElementById('CheckEligibility');
+eligibility.addEventListener("click", checkEligibility);

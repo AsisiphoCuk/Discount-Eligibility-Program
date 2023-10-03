@@ -8,29 +8,31 @@
 </head>
 <body>
 
-    <form method="post" action="submit">
-        <fieldset>
-            <h1>User Discount Eligibility</h1>
-            <label for="Age">How old are you?</label>
-                <input type="number"> <br> <br>
+   
+        <form id="myForm">
+            <h1>Check User Discount Eligibility</h1>
+            <label for="age">How old are you?</label>
+                <input type="number" id="age"> <br> <br>
             <label for="status">Are you a member?</label>
-            <label class="radioButton">
+            <label class="radioButton" id="radioButton">
                 <label for="option-yes">
-                    <input type="radio" id="option-yes" name="option" value="yes" />
+                    <input type="radio" id="option-yes" name="member" value="yes">
                     <span>Yes</span>
                   </label>
                   
                   <label for="option-no">
-                    <input type="radio" id="option-no" name="option" value="no" />
+                    <input type="radio" id="option-no" name="member" value="no">
                     <span>No</span>
                   </label>
             </label> <br><br>
 
-            <button>Check Eligibility</button>
+            <input type="submit" value="Check Eligibility" id="CheckEligibility">
+           
                 
 
-        </fieldset>
-    </form>
+        </form>
+        
+    
     <script src="index.js"></script>
 </body>
 </html>
